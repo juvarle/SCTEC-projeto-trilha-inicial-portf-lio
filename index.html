@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Juliana</h1>
+
+        <nav> <!--Seção de navegação de site.-->
+            <ul>
+                <li><a href="#sobremim">Sobre mim</a></li>
+                <li><a href="#projeto">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <!-- <li>Sobre mim</li> -->
+            </ul> <!--Lista não ordenada para links do nosso menu.-->
+        </nav>
+
+    </header>
+
+    <section id="sobremim">
+
+        <h2>Sobre mim</h2>
+
+        <img src="Foto.jpeg" alt="Imagem de foto de perfil." title="Imagem de perfil.">
+
+        <article>
+            <p>Sou aluna do SATEC, estou cursando a trilha de desenvolvedor de software na área de front-end.</p>
+        </article>
+
+        <aside>
+            <h3>Habilidades</h3>
+
+            <ul>
+                <Li>HTML</Li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </aside>
+
+    </section>
+
+    <section id="projeto">
+
+        <H2>Projetos</H2>
+
+        <article>
+            <h3>Portifólio</h3>
+
+            <p> Atualmente estou desenvolvendo o meu primeiro projeto através do curso.</p>
+        </article>
+
+    </section>
+
+    <footer>
+
+        <p>
+            Direitos reservados a Juliana.
+        </p>
+
+        <section id="contato">
+            <h2>Contato</h2>
+
+            <p>Tem interesse em realizar um projeto? Entre em contato.</p>
+
+            <form action="">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" required> <br>
+
+            <label for="nome">E-mail: </label>
+            <input type="email" id="nome" name="email" required> <br>
+
+            <label for="nome">Telefone: </label>
+            <input type="text" id="tel" name="tel"> <br>
+
+            <label for="assunto">Assunto: </label>
+            <select name="assunto" id="assunto">
+                   <option value="orcamento">Orçamento</option>
+                   <option value="duvida">Dúvida</option>
+                   <option value="outro">Outro</option>
+            </select>
+            
+            <br>
+
+            <label for="mensagem">Mensagem: </label>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="3" required></textarea>
+
+            <input type="checkbox" id="inscricao" name="inscricao">
+            <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+            <br>
+
+            <input type="submit" value="Enviar mensagem.">
+            </form>
+
+            <address> <br>
+                E-mail <a href="mailto:julianas@gmail.com">julianas@gmail.com</a> <br>
+                Telefone <a href="tel:+(48) 991235688">(48) 991235688</a> <br>
+                Linkedin <a href="https://www.linkedin.com/in/julianavarlett/" target="_blank">Juliana</a>
+            </address>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
