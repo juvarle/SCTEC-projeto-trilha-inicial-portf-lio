@@ -1,149 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da página</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+<header>
+  <h1>Juliana Silva</h1>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
-        <h1>Juliana</h1>
+<main>
 
-        <nav> <!--Seção de navegação de site.-->
-            <ul>
-                <li><a href="#sobremim">Sobre mim</a></li>
-                <li><a href="#projeto">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <!-- <li>Sobre mim</li> -->
-            </ul> <!--Lista não ordenada para links do nosso menu.-->
-        </nav>
+  <div class="container-sobre-habilidades">
 
-    </header>
-
-    <section id="sobremim">
-
-        <h2>Sobre mim</h2>
-
-        <img src="Foto.jpeg" alt="Imagem de foto de perfil." title="Imagem de perfil.">
-
-        <article>
-            <p>Sou aluna do SATEC, estou cursando a trilha de desenvolvedor de software.</p>
-        </article>
-
-        <aside>
-            <h3>Habilidades</h3>
-
-            <ul>
-                <Li>HTML</Li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </aside>
-
-    </section>
-
-    <section id="projeto">
-
-        <H2>Projetos</H2>
-
-        <article>
-            <h3>Portifólio</h3>
-
-            <p> Atualmente estou desenvolvendo o meu primeiro projeto através do curso.</p>
-        </article>
-
+    <section id="sobre">
+      <article class="sobre-container">
+        <img src="Foto.jpg" alt="Foto de perfil de Juliana Silva">
+        <p>
+          Olá! Sou estudante de programação e atualmente participo do programa Carreira Tech 2026, uma iniciativa do estado de Santa Catarina voltada à formação de novos profissionais na área de tecnologia. Escolhi a trilha de desenvolvimento de software e esta página foi criada como parte do meu aprendizado, aqui você pode conhecer um pouco do que já desenvolvi até agora.
     </section>
 
     <section id="habilidades">
-
-        <h2>Habilidades e tecnologias</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Tecnologia</th>
-                    <th>Nível</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                  <tr>
-                    <td>HTML</td>
-                    <td>Iniciante</td>
-                    <td>Experiência com flexbox, grid e animações CSS.</td>
-                </tr>
-
-                <tr>
-                    <td>CSS</td>
-                    <td>Intermediário</td>
-                    <td>Capaz de construir estruturas de páginas web semênticas e responsivas.</td>
-                </tr>
-
-                 <tr>
-                    <td>JavaScript</td>
-                    <td>Básico</td>
-                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
-                </tr>
-            </tbody>
-        </table>
-
+      <h2>Minhas habilidades</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Atenção aos detalhes</li>
+        <li>Organização</li>
+        <li>Vontade de aprender</li>
+      </ul>
     </section>
 
-    <footer>
+  </div>
 
-        <p>
-            Direitos reservados a Juliana.
-        </p>
+  <section id="projetos">
+    <h2>Projetos</h2>
 
-        <section id="contato">
-            <h2>Contato</h2>
+    <div class="projeto">
+      <h3>Lista de Tarefas (To-Do List)</h3>
+      <p>
+        Aplicação web interativa que permite adicionar tarefas dinamicamente,
+        organizando atividades do dia a dia através da manipulação do DOM.
+      </p>
+      <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+      <a href="#">Ver projeto</a>
+    </div>
 
-            <p>Tem interesse em realizar um projeto? Entre em contato.</p>
+    <div class="projeto">
+      <h3>Validação de Formulário</h3>
+      <p>
+        Projeto desenvolvido para validar campos de formulário como e-mail,
+        telefone e senha, garantindo que os dados inseridos sigam padrões
+        corretos utilizando JavaScript e expressões regulares.
+      </p>
+      <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+      <a href="#">Ver projeto</a>
+    </div>
 
-            <form action="">
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" name="nome" required> <br>
+    <div class="projeto">
+      <h3>Landing Page de Portfólio</h3>
+      <p>
+        Página web responsiva desenvolvida para apresentação pessoal,
+        contendo seções como "Sobre mim" e "Habilidades", utilizando
+        técnicas modernas de layout com Flexbox e Grid.
+      </p>
+      <p><strong>Tecnologias:</strong> HTML, CSS</p>
+      <a href="#">Ver projeto</a>
+    </div>
 
-            <label for="nome">E-mail: </label>
-            <input type="email" id="nome" name="email" required> <br>
+  </section>
 
-            <label for="nome">Telefone: </label>
-            <input type="text" id="tel" name="tel"> <br>
+  <section id="contato">
+    <h2>Contato</h2>
 
-            <label for="assunto">Assunto: </label>
-            <select name="assunto" id="assunto">
-                   <option value="orcamento">Orçamento</option>
-                   <option value="duvida">Dúvida</option>
-                   <option value="outro">Outro</option>
-            </select>
-            
-            <br>
+    <form id="formContato">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu email" required>
+      <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
 
-            <label for="mensagem">Mensagem: </label>
-            <textarea name="mensagem" id="mensagem" cols="20" rows="3" required></textarea>
+    <p id="resposta"></p>
+  </section>
 
-            <input type="checkbox" id="inscricao" name="inscricao">
-            <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+</main>
 
-            <br>
+<footer>
+  <p>&copy; 2026 Juliana Silva - Todos os direitos reservados</p>
+</footer>
 
-            <input type="submit" value="Enviar mensagem.">
-            </form>
-
-            <address> <br>
-                E-mail <a href="mailto:julianas@gmail.com">julianas@gmail.com</a> <br>
-                Telefone <a href="tel:+(48) 991235688">(48) 991235688</a> <br>
-                Linkedin <a href="https://www.linkedin.com/in/julianavarlett/" target="_blank">Juliana</a>
-            </address>
-        </section>
-
-    </footer>
+<script src="script.js"></script>
 
 </body>
-
 </html>
